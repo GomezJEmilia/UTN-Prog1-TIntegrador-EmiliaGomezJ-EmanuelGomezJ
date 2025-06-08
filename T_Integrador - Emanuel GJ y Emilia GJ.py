@@ -1,9 +1,8 @@
 # Clase que representa un turno médico
 class Turno:
-    def __init__(self, dni, nombre, prioridad, hora):
+    def __init__(self, dni, nombre, hora):
         self.dni = dni
         self.nombre = nombre
-        self.prioridad = prioridad
         self.hora = hora  # ejemplo: 9.30, 10.15
 
     def __str__(self):
@@ -84,11 +83,11 @@ def crear_arbol_turnos(lista_turnos):
 
 # Creamos lista con turnos
 turnos = [
-    Turno(43153023, "Emilia Gómez Juárez", 2, 9.30),
-    Turno(28900444, "Carlos Pérez", 4, 10.15),
-    Turno(39082786, "Emanuel Gómez", 1, 8.45),
-    Turno(30111222, "Marcos Díaz", 3, 11.00),
-    Turno(28888333, "Sofía Torres", 5, 9.00),
+    Turno(43153023, "Emilia Gómez Juárez", 9.30),
+    Turno(28900444, "Carlos Pérez", 10.15),
+    Turno(39082786, "Emanuel Gómez", 8.45),
+    Turno(30111222, "Marcos Díaz", 11.00),
+    Turno(28888333, "Sofía Torres", 9.00),
 ]
 
 # Creamos el arbol a partir de la lista de turnos
